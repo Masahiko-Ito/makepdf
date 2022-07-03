@@ -1,0 +1,26 @@
+﻿#
+# 生成方法：MakePdf.exe -i sample_input_filloval.txt -e UTF-8 -o sample_input_filloval.pdf
+#
+
+#
+# 用紙設定
+#
+PT	A4V
+#PT	210.0	297.0
+CPI	10.0
+LPI	6.0
+XB	0.0
+YB	0.0
+#
+# 1ページ目の10カラム目、2行目から20カラム目、12行目に1pointの幅で楕円を塗りつぶす
+#
+NP
+PO	1.0
+FO	10.0	2.0	20.0	12.0
+#
+# 2ページ目の10カラム目、2行目から20カラム目、12行目に4pointの幅、赤色（不透明度1.0）で楕円を塗りつぶす
+#
+NP
+CO	RED	1.0
+PO	4.0
+FO	10.0	2.0	20.0	12.0

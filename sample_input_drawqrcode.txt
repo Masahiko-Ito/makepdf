@@ -1,0 +1,26 @@
+﻿#
+# 生成方法：MakePdf.exe -i sample_input_drawqrcode.txt -e UTF-8 -o sample_input_drawqrcode.pdf
+#
+
+#
+# 用紙設定
+#
+PT	A4V
+#PT	210.0	297.0
+CPI	10.0
+LPI	6.0
+XB	0.0
+YB	0.0
+
+#
+# 1ページ目の10カラム目、2行目から20カラム目、12行目を対角線とする矩形内いっぱいにアスペクト比を保った状態でQRCode(This is QRCode test.)を描画する
+#
+NP
+SQ	This is QRCode test.
+DQ	10.0	2.0	20.0	12.0
+#
+# 2ページ目の20カラム目、12行目から30カラム目、22行目を対角線とする矩形内いっぱいにアスペクト比を保った状態でQRCode(This is QRCode test.)を描画する
+#
+NP
+SQ	This is QRCode test.
+DQ	20.0	12.0	30.0	22.0
