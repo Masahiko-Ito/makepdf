@@ -1,11 +1,11 @@
-# MakePdf - PDFì¬ƒc[ƒ‹ with iText7
-**MakePdf**‚ÍAPDF‚ğ¶¬‚·‚é‚½‚ß‚ÌŠÈˆÕ‚ÈƒRƒ}ƒ“ƒh‚ğ‹Lq‚µ‚½ƒtƒ@ƒCƒ‹i
-‚à‚µ‚­‚Í•W€“ü—Íj‚ğ‰ğß‚µPDF‚ğ¶¬‚µ‚Ü‚·B**MakePdf**‚ÍPDF‚Ì¶¬ƒGƒ“
-ƒWƒ“‚Æ‚µ‚Ä**iText7**‚ğg—p‚µ‚Ü‚·B‚Ü‚½ƒrƒ‹ƒh‚Í**csc.exe**‚Ì‚İ‚Ås‚¢
-‚Ü‚·B
+# MakePdf - PDFä½œæˆãƒ„ãƒ¼ãƒ« with iText7
+**MakePdf**ã¯ã€PDFã‚’ç”Ÿæˆã™ã‚‹ãŸã‚ã®ç°¡æ˜“ãªã‚³ãƒãƒ³ãƒ‰ã‚’è¨˜è¿°ã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆ
+ã‚‚ã—ãã¯æ¨™æº–å…¥åŠ›ï¼‰ã‚’è§£é‡ˆã—PDFã‚’ç”Ÿæˆã—ã¾ã™ã€‚**MakePdf**ã¯PDFã®ç”Ÿæˆã‚¨ãƒ³
+ã‚¸ãƒ³ã¨ã—ã¦**iText7**ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚ã¾ãŸãƒ“ãƒ«ãƒ‰ã¯**csc.exe**ã®ã¿ã§è¡Œã„
+ã¾ã™ã€‚
 
-## g‚¢•û
-ƒwƒ‹ƒv•\¦‚ğˆÈ‰º‚É¦‚µ‚Ü‚·B
+## ä½¿ã„æ–¹
+ãƒ˜ãƒ«ãƒ—è¡¨ç¤ºã‚’ä»¥ä¸‹ã«ç¤ºã—ã¾ã™ã€‚
 ```
 >MakePdf -h
 Usage : MakePdf.exe [-v page] [-i input.txt] [-e input_encoding] [-t template.pdf] [-o output.pdf]
@@ -100,15 +100,15 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
   $OutputEncoding = $oe # Restore output encoding for pipe.
   [System.Console]::OutputEncoding = $scoe      # Restore output encoding for console.
 ```
-Šî–{“I‚É**iText7**‚ÌƒCƒ“ƒ^ƒtƒF[ƒX‚Íƒy[ƒW‚Ì¶‰º‚ªŒ´“_‚ÅAÀ•W‚Íƒ|ƒC
-ƒ“ƒg‚Åw’è‚·‚é‚Ì‚Å‚·‚ªA**MakePdf**‚Å‚Íƒy[ƒW‚Ì¶ã‚ªŒ´“_‚ÅAÀ•W‚Ì
-‰¡•ûŒü‚ÍƒJƒ‰ƒ€”Ac•ûŒü‚Ís”‚Åw’è‚µ‚Ü‚·BCOBOL“™‚Ì––±ˆ——pŒ¾Œê‚Å
-’ •[‚ğŠJ”­‚µ‚Ä‚¢‚½•û‚É‚Í“éõ‚İˆÕ‚¢‚Ì‚Å‚Í‚È‚¢‚©‚Æv‚¢‚Ü‚·B
+åŸºæœ¬çš„ã«**iText7**ã®ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹ã¯ãƒšãƒ¼ã‚¸ã®å·¦ä¸‹ãŒåŸç‚¹ã§ã€åº§æ¨™ã¯ãƒã‚¤
+ãƒ³ãƒˆã§æŒ‡å®šã™ã‚‹ã®ã§ã™ãŒã€**MakePdf**ã§ã¯ãƒšãƒ¼ã‚¸ã®å·¦ä¸ŠãŒåŸç‚¹ã§ã€åº§æ¨™ã®
+æ¨ªæ–¹å‘ã¯ã‚«ãƒ©ãƒ æ•°ã€ç¸¦æ–¹å‘ã¯è¡Œæ•°ã§æŒ‡å®šã—ã¾ã™ã€‚COBOLç­‰ã®äº‹å‹™å‡¦ç†ç”¨è¨€èªã§
+å¸³ç¥¨ã‚’é–‹ç™ºã—ã¦ã„ãŸæ–¹ã«ã¯é¦´æŸ“ã¿æ˜“ã„ã®ã§ã¯ãªã„ã‹ã¨æ€ã„ã¾ã™ã€‚
 
-## •K—v‚ÈDLL
-ƒ_ƒEƒ“ƒ[ƒh‚µ‚½**nuget**‚ÌŠg’£q‚ğ**zip**‚É•Ï‚¦‚ÄA**dll**‚ğ
-æ‚èo‚µ‚Ü‚·i‚·‚¢‚Ü‚¹‚ñA„‚Í**nuget**‚Ì–{—ˆ‚Ìg‚¢•û‚ğ—‰ğ‚µ‚Ä‚Ü‚¹
-‚ñ...jB
+## å¿…è¦ãªDLL
+ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸ**nuget**ã®æ‹¡å¼µå­ã‚’**zip**ã«å¤‰ãˆã¦ã€**dll**ã‚’
+å–ã‚Šå‡ºã—ã¾ã™ï¼ˆã™ã„ã¾ã›ã‚“ã€ç§ã¯**nuget**ã®æœ¬æ¥ã®ä½¿ã„æ–¹ã‚’ç†è§£ã—ã¦ã¾ã›
+ã‚“...ï¼‰ã€‚
 * [bouncycastle.1.8.9.nupkg](https://xxxxxxxx/)
   * BouncyCastle.Crypto.dll
 * [itext7.7.2.2.nupkg](https://xxxxxxxx/)
@@ -130,13 +130,13 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
 * [microsoft.extensions.options.5.0.0.nupkg](https://xxxxxxxx/)
   * Microsoft.Extensions.Options.dll
 
-## ƒrƒ‹ƒhè‡
-**csc.exe**‚ÌƒpƒX‚ÍA‚²©g‚ÌŠÂ‹«‚É‡‚í‚¹‚Ä“Ç‚İ‘Ö‚¦‚Ä‚­‚¾‚³‚¢B
+## ãƒ“ãƒ«ãƒ‰æ‰‹é †
+**csc.exe**ã®ãƒ‘ã‚¹ã¯ã€ã”è‡ªèº«ã®ç’°å¢ƒã«åˆã‚ã›ã¦èª­ã¿æ›¿ãˆã¦ãã ã•ã„ã€‚
 ```
 c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:library MyPackage.cs
 ```
-OracleŠÖŒW‚Ìƒ[ƒjƒ“ƒO‚ªo‚Ü‚·‚ªA¡‰ñ‚Ìƒrƒ‹ƒh‚É‚Í’¼ÚŠÖŒW‚Ì–³‚¢•”•ª
-‚È‚Ì‚ÅA‚Æ‚è‚ ‚¦‚¸–³‹‚µ‚Ä‚­‚¾‚³‚¢...
+Oracleé–¢ä¿‚ã®ãƒ¯ãƒ¼ãƒ‹ãƒ³ã‚°ãŒå‡ºã¾ã™ãŒã€ä»Šå›ã®ãƒ“ãƒ«ãƒ‰ã«ã¯ç›´æ¥é–¢ä¿‚ã®ç„¡ã„éƒ¨åˆ†
+ãªã®ã§ã€ã¨ã‚Šã‚ãˆãšç„¡è¦–ã—ã¦ãã ã•ã„...
 ```
 c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:library /r:itext.commons.dll;itext.barcodes.dll;itext.forms.dll;itext.io.dll;itext.kernel.dll;itext.layout.dll;itext.pdfa.dll;itext.sign.dll;itext.styledxmlparser.dll;itext.svg.dll;BouncyCastle.Crypto.dll;Microsoft.Extensions.Logging.Abstractions.dll;Microsoft.Extensions.Logging.dll;Microsoft.Extensions.Options.dll Pdf.cs
 ```
@@ -144,9 +144,9 @@ c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:library /r:itext.common
 c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /r:MyPackage.dll;Pdf.dll MakePdf.cs
 ```
 
-## ƒTƒ“ƒvƒ‹PDFi‹@”\’PˆÊj‚Ì¶¬
-**MakePdf**‚Ìƒwƒ‹ƒv•\¦‚ÆAˆÈ‰º‚ÌƒTƒ“ƒvƒ‹‚ğ‚²——‚¢‚½‚¾‚¯‚ê‚ÎAg‚¢•û
-‚Í—eˆÕ‚É—‰ğ‚¢‚½‚¾‚¯‚é‚Æv‚¢‚Ü‚·B
+## ã‚µãƒ³ãƒ—ãƒ«PDFï¼ˆæ©Ÿèƒ½å˜ä½ï¼‰ã®ç”Ÿæˆ
+**MakePdf**ã®ãƒ˜ãƒ«ãƒ—è¡¨ç¤ºã¨ã€ä»¥ä¸‹ã®ã‚µãƒ³ãƒ—ãƒ«ã‚’ã”è¦§ã„ãŸã ã‘ã‚Œã°ã€ä½¿ã„æ–¹
+ã¯å®¹æ˜“ã«ç†è§£ã„ãŸã ã‘ã‚‹ã¨æ€ã„ã¾ã™ã€‚
 ```
 MakePdf.exe -i sample_input_showtext.txt -e UTF-8 -o sample_input_showtext.pdf
 ```
@@ -172,7 +172,7 @@ MakePdf.exe -i sample_input_drawimage.txt -e UTF-8 -o sample_input_drawimage.pdf
 MakePdf.exe -i sample_input_drawqrcode.txt -e UTF-8 -o sample_input_drawqrcode.pdf
 ```
 
-## ƒTƒ“ƒvƒ‹PDFiƒtƒ@ƒCƒ‹ˆê——•\j‚Ì¶¬
+## ã‚µãƒ³ãƒ—ãƒ«PDFï¼ˆãƒ•ã‚¡ã‚¤ãƒ«ä¸€è¦§è¡¨ï¼‰ã®ç”Ÿæˆ
 ```
 powershell -ex bypass -f .\sample_filelist.ps1
 ```
