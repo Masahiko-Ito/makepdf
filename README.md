@@ -106,8 +106,8 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
 帳票を開発していた方には馴染み易いのではないかと思います。
 
 ## 必要なDLL
-ダウンロードした**\.nuget**の拡張子を**\.zip**に変えて、**\.dll**を
-取り出します（すいません、私は**.nuget**の本来の使い方を理解してませ
+ダウンロードした**nuget**の拡張子を**zip**に変えて、**dll**を
+取り出します（すいません、私は**nuget**の本来の使い方を理解してませ
 ん...）。
 * [bouncycastle.1.8.9.nupkg](https://xxxxxxxx/)
   * BouncyCastle.Crypto.dll
