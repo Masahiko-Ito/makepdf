@@ -1,7 +1,7 @@
 # MakePdf - PDF作成ツール with iText7
-** MakePdf **は、PDFを生成するための簡易なコマンドを記述したファイル（
-もしくは標準入力）を解釈しPDFを生成します。** MakePdf **はPDFの生成エン
-ジンとして** iText7 **を使用します。またビルドは** csc.exe **のみで行い
+**MakePdf**は、PDFを生成するための簡易なコマンドを記述したファイル（
+もしくは標準入力）を解釈しPDFを生成します。**MakePdf**はPDFの生成エン
+ジンとして**iText7**を使用します。またビルドは**csc.exe**のみで行い
 ます。
 
 ## 使い方
@@ -100,14 +100,14 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
   $OutputEncoding = $oe # Restore output encoding for pipe.
   [System.Console]::OutputEncoding = $scoe      # Restore output encoding for console.
 ```
-基本的に** iText7 **のインタフェースはページの左下が原点で、座標はポイ
-ントで指定するのですが、** MakePdf **ではページの右上が原点で、座標の
+基本的に**iText7**のインタフェースはページの左下が原点で、座標はポイ
+ントで指定するのですが、**MakePdf**ではページの右上が原点で、座標の
 横方向はカラム数、縦方向は行数で指定します。COBOL等の事務処理用言語で
 帳票を開発していた方には馴染み易いのではないかと思います。
 
 ## 必要なDLL
-ダウンロードした** .nuget **の拡張子を** .zip **に変えて、** .dll **を
-取り出します（すいません、私は** .nuget **の本来の使い方を理解してませ
+ダウンロードした**.nuget**の拡張子を**.zip**に変えて、**.dll**を
+取り出します（すいません、私は**.nuget**の本来の使い方を理解してませ
 ん...）。
 * [bouncycastle.1.8.9.nupkg](https://xxxxxxxx/)
 ** BouncyCastle.Crypto.dll
@@ -131,7 +131,7 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
 ** Microsoft.Extensions.Options.dll
 
 ## ビルド手順
-** csc.exe **のパスは、ご自身の環境に合わせて読み替えてください。
+**csc.exe**のパスは、ご自身の環境に合わせて読み替えてください。
 ```
 >c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:library MyPackage.cs
 ```
@@ -145,7 +145,7 @@ Oracle関係のワーニングが出ますが、今回のビルドには直接関係の無い部分
 ```
 
 ## サンプルPDF（機能単位）の生成
-** MakePdf **のヘルプ表示と、以下のサンプルをご覧いただければ、使い方
+**MakePdf**のヘルプ表示と、以下のサンプルをご覧いただければ、使い方
 は容易に理解いただけると思います。
 ```
 >MakePdf.exe -i sample_input_showtext.txt -e UTF-8 -o sample_input_showtext.pdf
