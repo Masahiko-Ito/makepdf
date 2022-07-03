@@ -101,7 +101,7 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
   [System.Console]::OutputEncoding = $scoe      # Restore output encoding for console.
 ```
 基本的に**iText7**のインタフェースはページの左下が原点で、座標はポイ
-ントで指定するのですが、**MakePdf**ではページの右上が原点で、座標の
+ントで指定するのですが、**MakePdf**ではページの左上が原点で、座標の
 横方向はカラム数、縦方向は行数で指定します。COBOL等の事務処理用言語で
 帳票を開発していた方には馴染み易いのではないかと思います。
 
