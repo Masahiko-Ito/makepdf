@@ -110,69 +110,69 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
 取り出します（すいません、私は**.nuget**の本来の使い方を理解してませ
 ん...）。
 * [bouncycastle.1.8.9.nupkg](https://xxxxxxxx/)
-** BouncyCastle.Crypto.dll
+ * BouncyCastle.Crypto.dll
 * [itext7.7.2.2.nupkg](https://xxxxxxxx/)
-** itext.barcodes.dll
-** itext.forms.dll
-** itext.io.dll
-** itext.kernel.dll
-** itext.layout.dll
-** itext.pdfa.dll
-** itext.sign.dll
-** itext.styledxmlparser.dll
-** itext.svg.dll
+ * itext.barcodes.dll
+ * itext.forms.dll
+ * itext.io.dll
+ * itext.kernel.dll
+ * itext.layout.dll
+ * itext.pdfa.dll
+ * itext.sign.dll
+ * itext.styledxmlparser.dll
+ * itext.svg.dll
 * [itext7.commons.7.2.2.nupkg](https://xxxxxxxx/)
-** itext.commons.dll
+ * itext.commons.dll
 * [microsoft.extensions.logging.5.0.0.nupkg](https://xxxxxxxx/)
-** Microsoft.Extensions.Logging.dll
+ * Microsoft.Extensions.Logging.dll
 * [microsoft.extensions.logging.abstractions.5.0.0.nupkg](https://xxxxxxxx/)
-** Microsoft.Extensions.Logging.Abstractions.dll
+ * Microsoft.Extensions.Logging.Abstractions.dll
 * [microsoft.extensions.options.5.0.0.nupkg](https://xxxxxxxx/)
-** Microsoft.Extensions.Options.dll
+ * Microsoft.Extensions.Options.dll
 
 ## ビルド手順
 **csc.exe**のパスは、ご自身の環境に合わせて読み替えてください。
 ```
->c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:library MyPackage.cs
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:library MyPackage.cs
 ```
 Oracle関係のワーニングが出ますが、今回のビルドには直接関係の無い部分
 なので、とりあえず無視してください...
 ```
->c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:library /r:itext.commons.dll;itext.barcodes.dll;itext.forms.dll;itext.io.dll;itext.kernel.dll;itext.layout.dll;itext.pdfa.dll;itext.sign.dll;itext.styledxmlparser.dll;itext.svg.dll;BouncyCastle.Crypto.dll;Microsoft.Extensions.Logging.Abstractions.dll;Microsoft.Extensions.Logging.dll;Microsoft.Extensions.Options.dll Pdf.cs
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:library /r:itext.commons.dll;itext.barcodes.dll;itext.forms.dll;itext.io.dll;itext.kernel.dll;itext.layout.dll;itext.pdfa.dll;itext.sign.dll;itext.styledxmlparser.dll;itext.svg.dll;BouncyCastle.Crypto.dll;Microsoft.Extensions.Logging.Abstractions.dll;Microsoft.Extensions.Logging.dll;Microsoft.Extensions.Options.dll Pdf.cs
 ```
 ```
->c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /r:MyPackage.dll;Pdf.dll MakePdf.cs
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /r:MyPackage.dll;Pdf.dll MakePdf.cs
 ```
 
 ## サンプルPDF（機能単位）の生成
 **MakePdf**のヘルプ表示と、以下のサンプルをご覧いただければ、使い方
 は容易に理解いただけると思います。
 ```
->MakePdf.exe -i sample_input_showtext.txt -e UTF-8 -o sample_input_showtext.pdf
+MakePdf.exe -i sample_input_showtext.txt -e UTF-8 -o sample_input_showtext.pdf
 ```
 ```
->MakePdf.exe -i sample_input_drawline.txt -e UTF-8 -o sample_input_drawline.pdf
+MakePdf.exe -i sample_input_drawline.txt -e UTF-8 -o sample_input_drawline.pdf
 ```
 ```
->MakePdf.exe -i sample_input_drawbox.txt -e UTF-8 -o sample_input_drawbox.pdf
+MakePdf.exe -i sample_input_drawbox.txt -e UTF-8 -o sample_input_drawbox.pdf
 ```
 ```
->MakePdf.exe -i sample_input_fillbox.txt -e UTF-8 -o sample_input_fillbox.pdf
+MakePdf.exe -i sample_input_fillbox.txt -e UTF-8 -o sample_input_fillbox.pdf
 ```
 ```
->MakePdf.exe -i sample_input_drawoval.txt -e UTF-8 -o sample_input_drawoval.pdf
+MakePdf.exe -i sample_input_drawoval.txt -e UTF-8 -o sample_input_drawoval.pdf
 ```
 ```
->MakePdf.exe -i sample_input_filloval.txt -e UTF-8 -o sample_input_filloval.pdf
+MakePdf.exe -i sample_input_filloval.txt -e UTF-8 -o sample_input_filloval.pdf
 ```
 ```
->MakePdf.exe -i sample_input_drawimage.txt -e UTF-8 -o sample_input_drawimage.pdf
+MakePdf.exe -i sample_input_drawimage.txt -e UTF-8 -o sample_input_drawimage.pdf
 ```
 ```
->MakePdf.exe -i sample_input_drawqrcode.txt -e UTF-8 -o sample_input_drawqrcode.pdf
+MakePdf.exe -i sample_input_drawqrcode.txt -e UTF-8 -o sample_input_drawqrcode.pdf
 ```
 
 ## サンプルPDF（ファイル一覧表）の生成
 ```
->powershell -ex bypass -f .\sample_filelist.ps1
+powershell -ex bypass -f .\sample_filelist.ps1
 ```
