@@ -106,29 +106,29 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
 帳票を開発していた方には馴染み易いのではないかと思います。
 
 ## 必要なDLL
-ダウンロードした**.nuget**の拡張子を**.zip**に変えて、**.dll**を
+ダウンロードした**.nuget**の拡張子を__.zip__に変えて、**.dll**を
 取り出します（すいません、私は**.nuget**の本来の使い方を理解してませ
 ん...）。
 * [bouncycastle.1.8.9.nupkg](https://xxxxxxxx/)
- * BouncyCastle.Crypto.dll
+  * BouncyCastle.Crypto.dll
 * [itext7.7.2.2.nupkg](https://xxxxxxxx/)
- * itext.barcodes.dll
- * itext.forms.dll
- * itext.io.dll
- * itext.kernel.dll
- * itext.layout.dll
- * itext.pdfa.dll
- * itext.sign.dll
- * itext.styledxmlparser.dll
- * itext.svg.dll
+  * itext.barcodes.dll
+  * itext.forms.dll
+  * itext.io.dll
+  * itext.kernel.dll
+  * itext.layout.dll
+  * itext.pdfa.dll
+  * itext.sign.dll
+  * itext.styledxmlparser.dll
+  * itext.svg.dll
 * [itext7.commons.7.2.2.nupkg](https://xxxxxxxx/)
- * itext.commons.dll
+  * itext.commons.dll
 * [microsoft.extensions.logging.5.0.0.nupkg](https://xxxxxxxx/)
- * Microsoft.Extensions.Logging.dll
+  * Microsoft.Extensions.Logging.dll
 * [microsoft.extensions.logging.abstractions.5.0.0.nupkg](https://xxxxxxxx/)
- * Microsoft.Extensions.Logging.Abstractions.dll
+  * Microsoft.Extensions.Logging.Abstractions.dll
 * [microsoft.extensions.options.5.0.0.nupkg](https://xxxxxxxx/)
- * Microsoft.Extensions.Options.dll
+  * Microsoft.Extensions.Options.dll
 
 ## ビルド手順
 **csc.exe**のパスは、ご自身の環境に合わせて読み替えてください。
