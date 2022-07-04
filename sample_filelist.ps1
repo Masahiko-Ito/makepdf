@@ -8,6 +8,7 @@ $scoe = [System.Console]::OutputEncoding      # Backup output encoding for conso
 
 $OutputEncoding = [System.Console]::OutputEncoding = New-Object System.Text.UTF8Encoding $true        # UTF-8 with BOM
 
+# copy-item C:\Windows\Fonts\eudc.tte .\eudc.ttf
 &{
 	echo "PT	A4H"
 	echo "CPI	10"
@@ -15,6 +16,7 @@ $OutputEncoding = [System.Console]::OutputEncoding = New-Object System.Text.UTF8
 	echo "XB	3"
 	echo "YB	3.3"
 	echo "FN	C:\Windows\Fonts\msmincho.ttc,0"
+#	echo "FP	.\eudc.ttf"
 
 	echo "NP"
 	echo "PO	1.0"
@@ -54,6 +56,7 @@ foreach{
 		echo "YB	3.3"
 		echo "PO	14.4"
 		echo "FN	C:\Windows\Fonts\msmincho.ttc,0"
+#		echo "FP	.\eudc.ttf"
 
 		$page = 0
 		$line = 0
@@ -81,6 +84,8 @@ foreach{
 	}
 } |`
 .\MakePdf.exe -i - -e UTF-8 -t sample_filelist_template.pdf -o sample_filelist.pdf
+
+# remove-item .\eudc.ttf
 
 $OutputEncoding = $oe # Restore output encoding for pipe.
 [System.Console]::OutputEncoding = $scoe      # Restore output encoding for console.
