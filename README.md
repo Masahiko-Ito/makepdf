@@ -44,8 +44,8 @@ Format of input.txt.
   [FontNormal|FN] FONT_PATH
       default "C:\Windows\Fonts\msgothic.ttc,0".
   [FontPua|FP] FONT_PATH_PUA
-      FONT_PATH_PUA must have .TTF for extention.
-      default "C:\Windows\Fonts\EUDC.TTE", but extention is changed .TTF.
+      default "C:\Windows\Fonts\msgothic.ttc,0".
+      If you want to specify "C:\Windows\Fonts\EUDC.TTE", you have to copy "EUDC.TTE" to "EUDC.TTF " and use it.
   [Template|TP] TEMPLATE
       TEMPLATE must be PDF (default not specified).
   [NewPage|NP]

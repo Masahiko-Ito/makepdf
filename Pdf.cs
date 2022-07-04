@@ -50,7 +50,6 @@ public class Pdf{
 	Image ImageBarcode;
 	Color Color;
 	float Opacity;
-	string TempPuaFontname;
 	int Page;
 	CurrentFont CurrentFont;	// unknown normal pua
 	float CurrentFontPoint;		// 0.0f:unknown
@@ -135,14 +134,7 @@ public class Pdf{
 		this.PdfDocument = new PdfDocument(new PdfWriter(new FileStream(pdffilename, FileMode.Create, FileAccess.Write)));
 		this.Document = new Document(PdfDocument);
 		this.PdfFont = PdfFontFactory.CreateFont(@"C:\Windows\Fonts\msgothic.ttc,0", "Identity-H");
-		try{
-			this.TempPuaFontname = System.IO.Path.GetTempFileName() + ".TTF";
-			File.Copy(@"C:\Windows\Fonts\EUDC.TTE", this.TempPuaFontname, true);
-			this.PdfFontEudc = PdfFontFactory.CreateFont(this.TempPuaFontname, "Identity-H");
-		}catch{
-			this.TempPuaFontname = null;
-			this.PdfFontEudc = PdfFontFactory.CreateFont(@"C:\Windows\Fonts\msgothic.ttc,0", "Identity-H");
-		}
+		this.PdfFontEudc = PdfFontFactory.CreateFont(@"C:\Windows\Fonts\msgothic.ttc,0", "Identity-H");
 		this.PdfDocumentTemplate = null;
 		this.PdfPage = null;
 		this.PdfCanvas = null;
@@ -183,13 +175,11 @@ public class Pdf{
 //
 // 機能：フォントファイル設定（外字）
 //
-// 引数：fontfile フォントファイル名
-//                (規定値："C:\Windows\Fonts\EUDC.TTE"を一時ファイルにコピーし、拡張子を.TTFに変えたファイル)
+// 引数：fontfile フォントファイル名(規定値："C:\Windows\Fonts\msgothic.ttc,0")
 //
-// 例：pdf.setPuaFont(@"C:\Windows\Fonts\EUDC.TTF");
+// 例：pdf.setPuaFont(@"C:\Windows\Fonts\EUDC.TTF");	// "C:\Windows\Fonts\EUDC.TTE"の拡張子を.TTFに変えたファイル
 //
 	public void setPuaFont(string fontfile){
-		this.TempPuaFontname = null;
 		this.PdfFontEudc = PdfFontFactory.CreateFont(fontfile, "Identity-H");
 		this.CurrentFont = CurrentFont.unknown;
 		this.CurrentFontPoint = 0.0f;
@@ -307,13 +297,6 @@ public class Pdf{
 //
 	public void close(){
 		this.Document.Close();
-		try{
-			if (this.TempPuaFontname != null){
-				File.Delete(this.TempPuaFontname);
-			}
-		}catch{
-			// ignore error
-		}
 	}
 
 //

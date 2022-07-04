@@ -76,8 +76,8 @@ public class MakePdf{
 				Console.WriteLine("  [FontNormal|FN] FONT_PATH");
 				Console.WriteLine("      default \"C:\\Windows\\Fonts\\msgothic.ttc,0\".");
 				Console.WriteLine("  [FontPua|FP] FONT_PATH_PUA");
-				Console.WriteLine("      FONT_PATH_PUA must have .TTF for extention.");
-				Console.WriteLine("      default \"C:\\Windows\\Fonts\\EUDC.TTE\", but extention is changed .TTF.");
+				Console.WriteLine("      default \"C:\\Windows\\Fonts\\msgothic.ttc,0\".");
+				Console.WriteLine("      If you want to specify \"C:\\Windows\\Fonts\\EUDC.TTE\", you have to copy \"EUDC.TTE\" to \"EUDC.TTF\" and use it.");
 				Console.WriteLine("  [Template|TP] TEMPLATE");
 				Console.WriteLine("      TEMPLATE must be PDF (default not specified).");
 //				Console.WriteLine("  [Open|OP]");
