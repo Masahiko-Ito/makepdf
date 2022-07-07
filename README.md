@@ -109,9 +109,9 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
 ダウンロードした**nuget**の拡張子を**zip**に変えて、**dll**を
 取り出します（すいません、私は**nuget**の本来の使い方を理解してませ
 ん...）。
-* [bouncycastle.1.8.9.nupkg](https://xxxxxxxx/)
+* [bouncycastle.1.8.9.nupkg](https://www.nuget.org/packages/BouncyCastle/1.8.9)
   * BouncyCastle.Crypto.dll
-* [itext7.7.2.2.nupkg](https://xxxxxxxx/)
+* [itext7.7.2.2.nupkg](https://www.nuget.org/packages/itext7/7.2.2)
   * itext.barcodes.dll
   * itext.forms.dll
   * itext.io.dll
@@ -121,13 +121,13 @@ When MakePdf.exe read stdin in Powershell environment, do like next.
   * itext.sign.dll
   * itext.styledxmlparser.dll
   * itext.svg.dll
-* [itext7.commons.7.2.2.nupkg](https://xxxxxxxx/)
+* [itext7.commons.7.2.2.nupkg](https://www.nuget.org/packages/itext7.commons/7.2.2)
   * itext.commons.dll
-* [microsoft.extensions.logging.5.0.0.nupkg](https://xxxxxxxx/)
+* [microsoft.extensions.logging.5.0.0.nupkg](https://www.nuget.org/packages/Microsoft.Extensions.Logging/5.0.0)
   * Microsoft.Extensions.Logging.dll
-* [microsoft.extensions.logging.abstractions.5.0.0.nupkg](https://xxxxxxxx/)
+* [microsoft.extensions.logging.abstractions.5.0.0.nupkg](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/5.0.0)
   * Microsoft.Extensions.Logging.Abstractions.dll
-* [microsoft.extensions.options.5.0.0.nupkg](https://xxxxxxxx/)
+* [microsoft.extensions.options.5.0.0.nupkg](https://www.nuget.org/packages/Microsoft.Extensions.Options/5.0.0)
   * Microsoft.Extensions.Options.dll
 
 ## ビルド手順
