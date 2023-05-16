@@ -64,7 +64,7 @@ public class MakePdf{
 				Console.WriteLine("  [PaperType|PT] PAPER_TYPE");
 				Console.WriteLine("      PAPER_TYPE must be A4V, A4H, A3V, A3H.");
 				Console.WriteLine("  [PaperType|PT] WIDTH HEIGHT");
-				Console.WriteLine("      WIDTH and HEIGTH must be in mm.");
+				Console.WriteLine("      WIDTH and HEIGHT must be in mm.");
 				Console.WriteLine("  [CharPerInch|CPI] CPI");
 				Console.WriteLine("      CPI is chars in a inch (default 10).");
 				Console.WriteLine("  [LinePerInch|LPI] LPI");
