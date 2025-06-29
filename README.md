@@ -176,3 +176,6 @@ MakePdf.exe -i sample_input_drawqrcode.txt -e UTF-8 -o sample_input_drawqrcode.p
 ```
 powershell -ex bypass -f .\sample_filelist.ps1
 ```
+
+## Youtube
+[iText7を用いたPDF作成ツール：MakePdf](https://youtu.be/WS4NzzcdUNU)
