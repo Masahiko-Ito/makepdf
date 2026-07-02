@@ -178,4 +178,5 @@ powershell -ex bypass -f .\sample_filelist.ps1
 ```
 
 ## Youtube
-[iText7を用いたPDF作成ツール：MakePdf](https://youtu.be/WS4NzzcdUNU)
+* [MakePdf  コマンド駆動PDF生成](https://youtu.be/ma09upHejOo)
+* [MakePdf  開発者クックブック](https://youtu.be/ht4A2q75MTI)
